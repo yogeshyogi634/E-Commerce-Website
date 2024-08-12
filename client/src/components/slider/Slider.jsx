@@ -6,9 +6,11 @@ import EastIcon from "@mui/icons-material/East";
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
-    "https://images.pexels.com/photos/845434/pexels-photo-845434.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/845434/pexels-photo-845434.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "https://images.pexels.com/photos/859198/pexels-photo-859198.jpeg?auto=compress&cs=tinysrgb&w=1600",
+
+    ,
   ];
 
   const prevSlide = () => {
