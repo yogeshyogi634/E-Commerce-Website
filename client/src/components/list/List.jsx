@@ -1,5 +1,5 @@
 import Card from "../card/Card";
-import "./FeaturedProducts.scss";
+import "./List.scss";
 
 const data = [
   {
@@ -39,25 +39,14 @@ const data = [
   },
 ];
 
-const FeaturedProducts = ({ type }) => {
+const List = () => {
   return (
-    <div className="featuredProducts">
-      <div className="top">
-        <h1>{type} products</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          beatae voluptatibus porro dolore, pariatur atque aspernatur inventore
-          illum impedit deleniti, labore tempore saepe sint repellat hic
-          laudantium. Velit, cum consequuntur.
-        </p>
-      </div>
-      <div className="bottom">
-        {data.map((item) => (
-          <Card item={item} key={item.id} />
-        ))}
-      </div>
+    <div className="list">
+      {data?.map((item) => (
+        <Card item={item} key={item.id} />
+      ))}
     </div>
   );
 };
 
-export default FeaturedProducts;
+export default List;
